@@ -23,7 +23,7 @@ if (argvN > 0) {
     const ledgersCollection = db.collection('ledgers');
     let ledgersCount = 0;
 
-      rippleClient.on('ledger', async ledger => {
+    rippleClient.on('ledger', async ledger => {
       const fullLedger = await rippleClient.getLedger({
         ledgerHash: ledger.ledgerHash,
         includeAllData: true,
