@@ -36,6 +36,7 @@ if (argvN > 0) {
 
       if (ledgersCount === n) {
         await rippleClient.disconnect();
+        await mongoClient.close();
         process.exit(0);
       }
     });
