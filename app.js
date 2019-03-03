@@ -8,7 +8,7 @@ const mongoClient = new MongoClient('mongodb://localhost:27017/', {
   useNewUrlParser: true
 });
 
-const argvN = parseInt(process.argv.slice(2, 1), 10);
+const argvN = parseInt(process.argv.slice(2, 3), 10);
 let n = 5;
 if (argvN > 0) {
     n = argvN;
